@@ -14,11 +14,11 @@ Install-Curl.ps1
 Install-Curl.ps1 -installDirectory "C:\Temp" -Force32BitInstall -ForceDownload -32BitDownloadLocation "https://bintray.com/artifact/download/vszakats/generic/curl-7.50.0-win64-mingw.7z"
 
 ##Inputs
-$installDirectory
-$Force32BitInstall
-$ForceDownload
-$32BitDownloadLocation
-$64BitDownloadLocation
+$installDirectory  
+$Force32BitInstall  
+$ForceDownload  
+$32BitDownloadLocation  
+$64BitDownloadLocation  
 
 ##Notes
 Running the script as is will copy curl.exe and ca-bundle.crt to their respective architecture and default install location and if it can't find those files, will download it from winamppugins.co.uk   
