@@ -13,7 +13,7 @@ Install-Curl.ps1
 ##Example
 Install-Curl.ps1 -installDirectory "C:\Temp" -Force32BitInstall -ForceDownload -32BitDownloadLocation "https://bintray.com/artifact/download/vszakats/generic/curl-7.50.0-win64-mingw.7z"
 
-##Example
+##Inputs
 $installDirectory
 $Force32BitInstall
 $ForceDownload
