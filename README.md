@@ -1,5 +1,5 @@
 # Install-Curl
-Set of scripts and programs to install cURL 7.50.0 (as of 2016-07-29) to Windows. Substitute for http://www.confusedbycode.com/curl/ and https://chocolatey.org/packages/curl which are both out 
+Set of scripts and programs to install cURL 7.50.3 (as of 2016-09-30) to Windows. Substitute for http://www.confusedbycode.com/curl/ and https://chocolatey.org/packages/curl which are both out 
 of date.
 
 
