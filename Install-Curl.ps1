@@ -122,7 +122,8 @@ $shell.Namespace("$installDirectory\cURL").copyhere($item)
 # Add location to PATH variable
 
 $pathKey = "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
-$pathValue = Get-ItemPropertyValue -Path $pathKey -Name "Path"
+#$pathValue = Get-ItemPropertyValue -Path $pathKey -Name "Path"
+$pathValue = $env:Path
 if ($pathValue -notlike "*$installDirectory\cURL*") {
     $pathValue = "$pathValue;$installDirectory\cURL"
     Set-ItemProperty -Path $pathKey -Name "Path" -Value $pathValue -Verbose
