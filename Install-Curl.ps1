@@ -32,11 +32,11 @@ Param (
     
     [Parameter(Mandatory=$false)]
     [String]
-    $32BitDownloadLocation = "http://winampplugins.co.uk/curl/curl_7_50_3_openssl_nghttp2_x86.7z",
+    $32BitDownloadLocation = "https://winampplugins.co.uk/curl/curl_7_52_1_openssl_nghttp2_x86.7z",
 
     [Parameter(Mandatory=$false)]
     [String]
-    $64BitDownloadLocation = "http://winampplugins.co.uk/curl/curl_7_50_3_openssl_nghttp2_x64.7z"
+    $64BitDownloadLocation = "https://winampplugins.co.uk/curl/curl_7_52_1_openssl_nghttp2_x64.7z"
 )
 
 
