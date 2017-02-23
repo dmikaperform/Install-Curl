@@ -1,3 +1,4 @@
+#Requires -RunAsAdministrator
 <#
 .Synopsis
    Automatically install cURL in Windows
@@ -16,7 +17,7 @@
 .NOTES
    Running the script as is will copy curl.exe and ca-bundle.crt to their respective architecture and default install location and if it can't find those files, will download it from winamppugins.co.uk   
 #>
-
+[CmdletBinding()]
 Param (
     [Parameter(Mandatory=$false)]
     [String]
@@ -39,16 +40,7 @@ Param (
     $64BitDownloadLocation = "https://winampplugins.co.uk/curl/curl_7_53_0_openssl_nghttp2_x64.7z"
 )
 
-
-
-
-
-# Check if script is running as administrator
-If (!([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
-{
-    Write-Warning "You need to run this script from an elevated PowerShell prompt! Aborting..."
-    Break
-}
+Set-StrictMode -Version Latest
 
 # Check for OS architecture
 $osArch = (Get-WmiObject -Class Win32_ComputerSystem).SystemType
